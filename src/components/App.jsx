@@ -5,9 +5,11 @@ class App extends Component {
   state = {};
 
   render() {
-    <div>
-      <Checkbox />
-    </div>;
+    return (
+      <div>
+        <Checkbox />
+      </div>
+    );
   }
 }
 
