@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Checkbox from './Checkbox/Checkbox';
+import Radio from './Radio/Radio';
 
 class App extends Component {
   state = {};
@@ -7,7 +7,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Checkbox />
+        <Radio />
       </div>
     );
   }

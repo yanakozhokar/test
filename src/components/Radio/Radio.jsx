@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Checkbox extends Component {
+class Radio extends Component {
   state = {
     experience: 'junior',
   };
@@ -34,4 +34,4 @@ class Checkbox extends Component {
   }
 }
 
-export default Checkbox;
+export default Radio;
