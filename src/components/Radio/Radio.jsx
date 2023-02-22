@@ -5,6 +5,13 @@ class Radio extends Component {
     experience: 'junior',
   };
 
+  onChangeHandler = event => {
+    const { name, value } = event.currentTarget;
+    this.setState({
+      [name]: value,
+    });
+  };
+
   render() {
     return (
       <div>
@@ -12,6 +19,7 @@ class Radio extends Component {
           type="radio"
           name="experience"
           value="junior"
+          onChange={this.onChangeHandler}
           checked={this.state.experience === 'junior'}
         />
         Junior
@@ -19,6 +27,7 @@ class Radio extends Component {
           type="radio"
           name="experience"
           value="middle"
+          onChange={this.onChangeHandler}
           checked={this.state.experience === 'middle'}
         />
         Middle
@@ -26,6 +35,7 @@ class Radio extends Component {
           type="radio"
           name="experience"
           value="senior"
+          onChange={this.onChangeHandler}
           checked={this.state.experience === 'senior'}
         />
         Senior
